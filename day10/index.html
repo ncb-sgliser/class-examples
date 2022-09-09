@@ -3,25 +3,35 @@
     <head>
         <title>Tables</title>
         <style>
-            table{
-                border-spacing: 0;
-                border:1px solid #aaa;
-            }
-            th{
-                background-color: #aaa;
-                color:#fff;
-                font-weight: bold;
-                padding: 10px;
-            }
-            td{
-                padding: 10px;
-            }
-            tr:nth-child(even){
-                background-color:#ddd;
-            }
-            tr:hover{
-                background-color: rgb(242, 252, 155);
-            }
+          body{
+              background-color: red;
+          }
+          table{
+              border-spacing: 0;
+              border:1px solid #aaa;
+          }
+          th{
+              background-color: #aaa;
+              color:#fff;
+              font-weight: bold;
+              padding: 10px;
+          }
+          td{
+              padding: 10px;
+          }
+          tr:nth-child(even){
+              background-color:#ddd;
+              transition: all 1s ease-out;
+          }
+          tr:nth-child(odd){
+              background-color:#fff;
+              transition: all 1s ease-out;
+          }
+          tr:hover{
+            background-color: yellow;
+            transition: all .5s ease-in;
+          }
+
         </style>
     </head>
     <body>
