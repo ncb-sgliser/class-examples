@@ -1,12 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 body{
     background-image: linear-gradient(rgb(171, 193, 253), rgb(255, 255, 255));
     background-repeat: no-repeat;
     background-color: white;
 }
 h1, h2, h3, h4, h5, h6{
-    color: rgb(148, 148, 245);
+    color: rgb(26, 251, 33);
     text-shadow: 2px 2px navy;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Shadows Into Light', cursive, sans-serif;
 }
 h1{
     font-size: 200%;
