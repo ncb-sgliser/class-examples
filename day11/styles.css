@@ -5,6 +5,13 @@ body{
     background-image: linear-gradient(rgb(171, 193, 253), rgb(255, 255, 255));
     background-repeat: no-repeat;
     background-color: white;
+    margin:0;
+}
+.content{
+    background-color: white;
+    width:60%;
+    margin:0 auto ;
+    padding: 20px;
 }
 h1, h2, h3, h4, h5, h6{
     color: rgb(255, 162, 0);
@@ -30,6 +37,7 @@ nav{
     padding:10px;
     border-left:1px solid #999;
     border-right: 1px solid #999;
+    margin:-20px;
 }
 nav a{
     padding:10px 15px;
@@ -39,8 +47,8 @@ nav a{
 a, a:link, a:visited{
  color:rgb(0, 0, 0);
 }
-a:hover{
-    text-shadow: 2px 2px white;
+nav a:hover{
+    background-color:rgb(171, 193, 253);
 }
 ul.no-bullets {
     list-style-type: none; /* Remove bullets */
