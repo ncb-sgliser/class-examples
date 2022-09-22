@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body{
     background-image: linear-gradient(rgb(171, 193, 253), rgb(255, 255, 255));
@@ -7,9 +7,9 @@ body{
     background-color: white;
 }
 h1, h2, h3, h4, h5, h6{
-    color: rgb(26, 251, 33);
+    color: rgb(255, 162, 0);
     text-shadow: 2px 2px navy;
-    font-family: 'Shadows Into Light', cursive, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 h1{
     font-size: 200%;
@@ -22,8 +22,22 @@ h2{
 blockquote{
     font-style: italic;
 }
+nav{
+    position: sticky;
+    background-color:#CCC;
+    border-top:1px solid #999;
+    border-bottom:1px solid #999;
+    padding:10px;
+    border-left:1px solid #999;
+    border-right: 1px solid #999;
+}
+nav a{
+    padding:10px 15px;
+    color:#AAA;
+    border-right:1px solid #999;
+}
 a, a:link, a:visited{
- color:red;
+ color:rgb(0, 0, 0);
 }
 a:hover{
     text-shadow: 2px 2px white;
@@ -33,3 +47,34 @@ ul.no-bullets {
     padding: 0; /* Remove padding */
     margin: 0; /* Remove margins */
   }
+
+.album{
+    background-color: azure;
+    padding: 15px;
+    width: 600px;
+    margin:30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px rgba(10%, 10%, 10%, 10%);
+}
+.album img{ width: 200px; height: 200px; border-radius: 5px; margin-right:15px; margin-bottom: 15px;}
+.album h2{margin-top:0; text-shadow: none; color:black;}
+.album audio{
+    float:left;
+    margin-top:25px;
+    display:none;
+}
+.album table{
+    clear:both;
+    border:1px solid rgb(134, 133, 133);
+    border-collapse: collapse;
+}
+.album table th{
+    background-color:#CCC;
+}
+.album table td, .album table th{
+    font-family: 'Ubuntu', sans-serif;
+    padding:5px;
+    border:1px solid rgb(134, 133, 133);
+    border-spacing: 0;
+}
+audio{display:none;}
