@@ -19,3 +19,8 @@ label, fieldset{
     margin-top:30px
     
 }
+
+input:required:valid{box-shadow: 1px 1px green;}
+input:required:invalid{
+    box-shadow: 3px 3px red;
+}
