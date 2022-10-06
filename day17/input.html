@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Always use a viewport tag to make it repsonive for phones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Always use an external stylesheet to keep your html source clean-->
+    <link rel="stylesheet" href="basic.css">
+
+    <!--Always give a meaningful title-->
+    <title>Video Tag</title>
+</head>
+
+<body>
+
+    <!--Contain all your main content in a div that can be centered and have it's width restrained.-->
+    <div class="content">
+
+        <h1>Embedding Video</h1>
+        <p>Hosting your own videos</p>
+
+        <video width="320" height="240" controls poster="poster.jpg">
+            <source src="movie.mp4" type="video/mp4" media="all and (max-width: 2160px)"> <!--change the source to a 2k video-->
+            <source src="movie.mp4" type="video/mp4" media="all and (max-width: 1440px)"> <!--change the source to a QHD video-->
+            <source src="movie.mp4" type="video/mp4" media="all and (max-width: 1080px)"> <!--change the source to a FHD video-->
+            <source src="movie.mp4" type="video/mp4" media="all and (max-width: 720px)"> <!--change the source to a 720p video-->
+            <source src="movie.mp4" type="video/mp4" media="all and (max-width: 480px)"> <!--SD Video-->
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+
+        <p>There are three supported video formats in HTML: MP4, WebM, and OGG.</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th style="width:25%">Browser</th>
+                    <th style="width:25%">MP4</th>
+                    <th style="width:25%">WebM</th>
+                    <th style="width:25%">Ogg</th>
+                </tr>
+                <tr>
+                    <td>Edge</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>Chrome</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+                <tr>
+                    <td>Safari</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>Opera</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                    <td>YES</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>

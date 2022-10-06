@@ -1,0 +1,18 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #ccc;
+    margin:0;
+    padding:0;
+}
+
+.content{
+    width:80%;
+    max-width: 1024px;
+    background-color: white;
+    margin:0 auto;
+    padding:20px;
+    
+}
+label{
+    display:block;
+}
