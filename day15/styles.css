@@ -30,6 +30,7 @@ blockquote{
     font-style: italic;
 }
 nav{
+    text-align: center;
     position: sticky;
     background-color:#CCC;
     border-top:1px solid #999;
@@ -89,4 +90,71 @@ label, fieldset{
     display:block;
     margin-top:30px
     
+}
+
+
+
+
+
+
+
+
+
+/* For extremely small screen devices (480px and below) */
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: white;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: green;
+        
+    }
+    #newcover{
+        max-width: 100%;
+    }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+    nav{
+        text-align: left;
+    }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    body {
+        background-color: orange;
+    }
+    nav{
+        text-align: center;
+    }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    body {
+        background-color: red;
+    }
+    nav{
+        text-align: center;
+    }
 }
