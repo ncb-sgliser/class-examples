@@ -1,0 +1,50 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #ccc;
+    margin:0;
+    padding:0;
+}
+
+.content{
+    width:80%;
+    max-width: 1024px;
+    background-color: white;
+    margin:0 auto;
+    padding:20px;
+    
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+ body{
+    background-color: blue;
+ }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+ body{
+    background-color: green;
+ }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color: yellow;
+    }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+    body{
+        background-color: orange;
+    }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+    body{
+        background-color: red;
+    }
+}
