@@ -32,6 +32,33 @@ function getOpperation(){
     document.getElementById("currentOpp").textContent = currentOpperation;
 }
 
+function doTheMath(){
+    //pull the value from numInput and assign it to a variable so we 
+    //so we can use it in one of the following opperations
+
+    //if the opperation is "+"
+
+        //conduct the add function
+
+    //if the opperation is "-"
+
+        //conduct the sub function
+
+    //if the opperation is "*"
+
+        //conduct the multiply function
+
+    //if the opperation is "/"
+
+        //conduct the divide function
+
+    //update the UI with the new value of the ACC
+
+    //set the value of the current opperation back to "" 
+
+    //update the UI with the value of the current opperation.
+}
+
 /**************************************
  * Here is the execution portion of our 
  * script. 
