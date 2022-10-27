@@ -33,23 +33,20 @@ function getOpperation(){
 }
 
 function doTheMath(){
-    //pull the value from numInput and assign it to a variable so we 
-    //so we can use it in one of the following opperations
+    //Pass the numInput's value into JavaScripts Number() function to turn 
+    //it form a string to a number and assign it to a new variable for 
+    //use in the upcoming calls to our math functions.
 
     //if the opperation is "+"
-
         //conduct the add function
 
     //if the opperation is "-"
-
         //conduct the sub function
-
+        
     //if the opperation is "*"
-
         //conduct the multiply function
-
+        
     //if the opperation is "/"
-
         //conduct the divide function
 
     //update the UI with the new value of the ACC
@@ -57,6 +54,8 @@ function doTheMath(){
     //set the value of the current opperation back to "" 
 
     //update the UI with the value of the current opperation.
+
+    //set the value of the input field to ""
 }
 
 /**************************************
@@ -81,4 +80,6 @@ addButton.onclick = getOpperation;
 subButton.onclick = getOpperation;
 mulButton.onclick = getOpperation;
 divButton.onclick = getOpperation;
+
+//assign doTheMath functoin to the click event of the eqButton
 
