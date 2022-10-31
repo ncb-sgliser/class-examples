@@ -5,6 +5,10 @@ if(testNumber == 0){
     console.log("Test Number is Zero");
 }
 
+if(testNumber != 0){
+    console.log("Test Number is NOT equal to Zero");
+}
+
 //if - else if - else - &&
 if(testNumber > 0){
     console.log("Test Number is Greater than Zero");
