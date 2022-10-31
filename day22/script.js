@@ -1,15 +1,16 @@
 var testNumber = 5;
 
-//if
+//if equal
 if(testNumber == 0){
     console.log("Test Number is Zero");
 }
 
+//if not equal
 if(testNumber != 0){
     console.log("Test Number is NOT equal to Zero");
 }
 
-//if - else if - else - &&
+//if - else if - else - && numeric compare
 if(testNumber > 0){
     console.log("Test Number is Greater than Zero");
 }else if(testNumber > 0 && testNumber <5){
