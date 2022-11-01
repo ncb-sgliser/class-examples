@@ -36,26 +36,43 @@ function doTheMath(){
     //Pass the numInput's value into JavaScripts Number() function to turn 
     //it form a string to a number and assign it to a new variable for 
     //use in the upcoming calls to our math functions.
+    var digit = Number(numInput.value);
 
     //if the opperation is "+"
+    if(currentOpperation == "+"){
         //conduct the add function
-
+        add(digit);
+    }
+    
     //if the opperation is "-"
+    if(currentOpperation == "-"){
         //conduct the sub function
-        
+        sub(digit);
+    }
+
     //if the opperation is "*"
+    if(currentOpperation == "*"){
         //conduct the multiply function
+        multiply(digit);
+    }
         
     //if the opperation is "/"
+    if(currentOpperation == "/"){
         //conduct the divide function
+        divide(digit);
+    }
 
     //update the UI with the new value of the ACC
+    document.getElementById("acc").textContent = acc;
 
     //set the value of the current opperation back to "" 
+    currentOpperation = "";
 
     //update the UI with the value of the current opperation.
+    document.getElementById("currentOpp").textContent = currentOpperation;
 
     //set the value of the input field to ""
+    numInput.value = "";
 }
 
 /**************************************
@@ -82,4 +99,4 @@ mulButton.onclick = getOpperation;
 divButton.onclick = getOpperation;
 
 //assign doTheMath functoin to the click event of the eqButton
-
+eqButton.onclick = doTheMath;
