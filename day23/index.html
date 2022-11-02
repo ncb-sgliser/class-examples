@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Always use a viewport tag to make it repsonive for phones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Always use an external stylesheet to keep your html source clean-->
+        <link rel="stylesheet" href="basic.css">
+
+        <!--Always give a meaningful title-->
+        <title>JavaScript Objects</title>
+    </head>
+    <body>
+
+        <!--Contain all your main content in a div that can be centered and have it's width restrained.-->
+        <div class="content">
+
+            <h1>JavaScript Calculator Object Version</h1>
+
+            <div id="acc"></div>
+            <div id="currentOpp"></div>
+
+            <br/>
+
+            <button id="add" data-opp="+" >+</button>
+            <button id="sub" data-opp="-">-</button>
+            <button id="multi" data-opp="*">*</button>
+            <button id="div" data-opp="/">/</button>
+
+            <br/>
+
+            <input type="number" name="num" id="num" value=""  />
+            
+            <br/>
+            
+            <button id="equal">=</button>
+
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
