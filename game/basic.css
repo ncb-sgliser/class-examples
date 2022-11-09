@@ -21,10 +21,12 @@ body{
 }
 
 .fighter{
-    top:8px;
+    bottom:8px;
     width:36px;
     height: 50px;
     position: absolute;
+    background-repeat: no-repeat;
+    background-position: bottom;
     z-index: 1;
 }
 
@@ -44,6 +46,8 @@ body{
 
 #fighter1.dead{
     background-image: url(images/sprites/Warrior-Dead.gif);
+    width: 52px;
+    height: 30px;
 }
 
 #fighter1.victory{
@@ -69,6 +73,8 @@ body{
 
 #fighter2.dead{
     background-image: url(images/sprites/Monk-Dead.gif);
+    width: 52px;
+    height: 30px;
 }
 
 #fighter2.victory{
