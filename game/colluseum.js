@@ -11,23 +11,6 @@ colluseum.load = function(){
 }
 
 
-
-colluseum.go = function(){
-    let fighter1 = this.fighters[0];
-    let fighter2 = this.fighters[1];
-    while(fighter1.hp > 0 && fighter2.hp > 0){
-        if(this.firstPlayersTurn){
-            fighter1.hp = fighter1.hp - 2;
-        }else{
-            fighter2.hp = fighter2.hp - 2;
-        }
-        this.firstPlayersTurn = !this.firstPlayersTurn;
-        console.log("1:"+fighter1.hp+"  2:"+fighter2.hp);
-    }
-    alert("game over");
-}
-
-/*
 colluseum.go = function(){
     let fighter1 = this.fighters[0];
     let fighter2 = this.fighters[1];
@@ -49,4 +32,3 @@ colluseum.go = function(){
         this.firstPlayersTurn = !this.firstPlayersTurn;
     }
 }
-*/
