@@ -75,6 +75,7 @@ ul.no-bullets {
     clear:both;
     border:1px solid rgb(134, 133, 133);
     border-collapse: collapse;
+    display: none;
 }
 .album table th{
     background-color:#CCC;
@@ -91,6 +92,8 @@ label, fieldset{
     margin-top:30px
     
 }
+
+.clear{clear:both}
 
 
 
