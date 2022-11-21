@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!--77c33d4a7f0cd1fe373961a66e86bbec-->
 <head>
     <title>Tour Schedule - The Broken Pen Caps</title>
     <link rel="stylesheet" href="styles.css">
@@ -21,21 +21,40 @@
             <img width="600px" src="images/BandOnTour.jpg" alt="band rocking out on stage in front of a large crowd">
         </p>
         <h2> Our 2023 US Tour Dates</h2>
+
+
+
+        <p>Forecast for tomorrow's concert:</p>
         <p>
-        <ul class="no-bullets">
-            <li>New York City — Jan 1st</li>
-            <li>Los Angeles — Feb 1st</li>
-            <li>Chicago — Mar 1st</li>
-            <li>Houston — Apr 1st</li>
-            <li>Phoenix — May 1st</li>
-            <li>Philadelphia — June 1st</li>
-            <li>San Antonio — July 1st</li>
-            <li>San Diego — Aug 1st</li>
-            <li>Dallas — Sept 1st</li>
-            <li>San Jose — Oct 1st</li>
-        </ul>
+            Low: <span id="low"></span> &nbsp; 
+            High: <span id="high"></span> &nbsp;
+            Sunset: <span id="sunset"></span>
+        </p>
+
+
+
+
+        <h2>Future Tour Dates</h2>
+        <p>
+            <ul class="no-bullets">
+                <li>New York City — Jan 1st</li>
+                <li>Los Angeles — Feb 1st</li>
+                <li>Chicago — Mar 1st</li>
+                <li>Houston — Apr 1st</li>
+                <li>Phoenix — May 1st</li>
+                <li>Philadelphia — June 1st</li>
+                <li>San Antonio — July 1st</li>
+                <li>San Diego — Aug 1st</li>
+                <li>Dallas — Sept 1st</li>
+                <li>San Jose — Oct 1st</li>
+            </ul>
         </p>
     </div>
+    <script>
+        fetch('http://api.weatherstack.com/forecast?access_key=77c33d4a7f0cd1fe373961a66e86bbec&units=f&query=64119')
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+    </script>
 </body>
 
 </html>
