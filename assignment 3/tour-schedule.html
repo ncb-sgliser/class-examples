@@ -53,7 +53,15 @@
     <script>
         fetch('http://api.weatherstack.com/forecast?access_key=77c33d4a7f0cd1fe373961a66e86bbec&units=f&query=64119')
             .then((response) => response.json())
-            .then((data) => console.log(data));
+            .then((data) => {
+                console.log(data);
+                document.getElementById("low").textContent = 
+                    data.forecast["2022-11-21"].mintemp;
+                document.getElementById("high").textContent = 
+                    data.forecast["2022-11-21"].maxtemp;
+                document.getElementById("sunset").textContent = 
+                    data.forecast["2022-11-21"].astro.sunset;
+            });
     </script>
 </body> 
 
