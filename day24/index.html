@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Always use a viewport tag to make it repsonive for phones-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Always use an external stylesheet to keep your html source clean-->
+        <link rel="stylesheet" href="basic.css">
+
+        <!--Always give a meaningful title-->
+        <title>Dynamic Table Building</title>
+    </head>
+    <body>
+
+        <!--Contain all your main content in a div that can be centered and have it's width restrained.-->
+        <div class="content">
+
+
+            <h1>Dynamic Table Building</h1>
+            <p id="catchphrase">Lorem ipsum dolor sit amet...</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Flavor</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="offer-table-body">
+
+                </tbody>
+
+            </table>
+
+        </div>
+        <script>
+            var data = {
+                "feed":"Jelly of the Month Club",
+                "catchphrase":"That's the gift that keeps on giving, Clark.",
+                "offers":[
+                    {
+                        "classification":"jelly",
+                        "flavor":"strawberry",
+                        "date":"12/01/2022"
+                    },
+                    {
+                        "classification":"jam",
+                        "flavor":"peach",
+                        "date":"01/01/2023"
+                    },
+                    {
+                        "classification":"preserves",
+                        "flavor":"blackberry",
+                        "date":"02/01/2023"
+                    }
+                ]
+            }
+
+            console.log(data);
+
+            document.getElementById("catchphrase").textContent = data.catchphrase;
+            
+            var tbody = document.getElementById("offer-table-body");
+
+            for (const x of data.offers) { 
+                console.log(x); 
+
+                var fragment = document.createDocumentFragment();
+
+                var row = document.createElement("tr");
+
+                var classification = document.createElement("td");
+                    classification.textContent = x.classification;
+
+                var flavor = document.createElement("td");
+                    flavor.textContent = x.flavor;
+                
+
+                var dt = document.createElement("td");
+                    dt.textContent = x.date;
+
+                row.appendChild(classification);
+                row.appendChild(flavor);
+                row.appendChild(dt);
+
+                fragment.appendChild(row);
+
+                tbody.appendChild(fragment);
+            }
+            
+            
+        </script>
+    </body>
+</html>

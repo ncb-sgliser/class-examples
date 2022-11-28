@@ -1,0 +1,21 @@
+{
+    "feed":"Jelly of the Month Club",
+    "cathphrase":"That's the gift that keeps on giving, Clark.",
+    "events":[
+        {
+            "classification":"jelly",
+            "flavor":"strawberry",
+            "date":"12/01/2022"
+        },
+        {
+            "classification":"jam",
+            "flavor":"peach",
+            "date":"01/01/2023"
+        },
+        {
+            "classification":"preserves",
+            "flavor":"blackberry",
+            "date":"02/01/2023"
+        }
+    ]
+}
