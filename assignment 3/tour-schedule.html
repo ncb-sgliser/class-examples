@@ -56,11 +56,11 @@
             .then((data) => {
                 console.log(data);
                 document.getElementById("low").textContent = 
-                    data.forecast["2022-11-21"].mintemp;
+                    data.forecast["2022-11-27"].mintemp;
                 document.getElementById("high").textContent = 
-                    data.forecast["2022-11-21"].maxtemp;
+                    data.forecast["2022-11-27"].maxtemp
                 document.getElementById("sunset").textContent = 
-                    data.forecast["2022-11-21"].astro.sunset;
+                    data.forecast["2022-11-27"].astro.sunset;
             });
     </script>
 </body> 
