@@ -20,21 +20,15 @@
         <p>
             <img width="600px" src="images/BandOnTour.jpg" alt="band rocking out on stage in front of a large crowd">
         </p>
-        <h2> Our 2023 US Tour Dates</h2>
 
+        <h3>
+            <img id="icon" src="" align="left">
+            Today's Concert Conditions<br>
+            Temp: <span id="temp"></span><br>
+            Conditions: <span id="conditions"></span>
+        </h3>
 
-
-        <p>Forecast for tomorrow's concert:</p>
-        <p>
-            Low: <span id="low"></span> &nbsp; 
-            High: <span id="high"></span> &nbsp;
-            Sunset: <span id="sunset"></span>
-        </p>
-
-
-
-
-        <h2>Future Tour Dates</h2>
+        <h2>Tour Dates</h2>
         <p>
             <ul class="no-bullets">
                 <li>New York City — Jan 1st</li>
@@ -51,16 +45,15 @@
         </p>
     </div>
     <script>
-        fetch('http://api.weatherstack.com/forecast?access_key=77c33d4a7f0cd1fe373961a66e86bbec&units=f&query=64119')
+        fetch('http://api.weatherstack.com/current?access_key=77c33d4a7f0cd1fe373961a66e86bbec&units=f&query=64119')
             .then((response) => response.json())
             .then((data) => {
                 console.log(data);
-                document.getElementById("low").textContent = 
-                    data.forecast["2022-11-27"].mintemp;
-                document.getElementById("high").textContent = 
-                    data.forecast["2022-11-27"].maxtemp
-                document.getElementById("sunset").textContent = 
-                    data.forecast["2022-11-27"].astro.sunset;
+                document.getElementById("temp").textContent = 
+                    data.current.feelslike;
+                document.getElementById("conditions").textContent = 
+                    data.current.weather_descriptions[0];
+                document.getElementById("icon").setAttribute("src", data.current.weather_icons[0])
             });
     </script>
 </body> 
