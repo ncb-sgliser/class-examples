@@ -1,0 +1,28 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #DDD;
+    margin:0;
+    padding:0;
+}
+.container {
+    background-color: white;
+}
+.letter{
+    display:inline-block;
+    border:1px solid #AAA;
+    background-color: #EEE;
+    width:2em;
+    height:2em;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+}
+
+.almost{
+    background-color: gold;
+}
+
+.yep{
+    background-color: rgb(130, 142, 253);
+}
