@@ -1,5 +1,4 @@
-/** The list of possible words */
-export const words = [
+const words = [
 	'aback',
 	'abase',
 	'abate',
@@ -2317,8 +2316,9 @@ export const words = [
 	'zonal'
 ];
 
+
 /** The list of valid guesses, of which the list of possible words is a subset */
-export const allowed = new Set([
+const allowed = new Set([
 	...words,
 	'aahed',
 	'aalii',
