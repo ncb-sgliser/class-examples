@@ -41,5 +41,6 @@ guessButton.onclick = function(){
         }
     }
     guessesMade++;
+    //ready for next guess
 }
 
