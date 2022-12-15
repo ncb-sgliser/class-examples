@@ -10,7 +10,7 @@ console.log(selectedWord);
 guessButton.onclick = function(){
     console.log(userInput.value);
     if(guessesMade <= guessesMax){
-        var userGuess = userInput.value;
+        var userGuess = userInput.value.toLowerCase();
         //check if the guess is valid
         if(allowed.has(userGuess)){
             //check if they win
@@ -33,6 +33,19 @@ guessButton.onclick = function(){
                     }
                     var uiLetter = document.querySelectorAll("#guess"+guessesMade+" > .letter")[x];
                     uiLetter.textContent = guessChars[x];
+                    if(isGuessCharInRightPosition){
+                        uiLetter.classList.add("yep");
+                    }else if(isGuessCharInWord){
+                        uiLetter.classList.add("almost");
+                    }
+                    if(isGuessCharInWord){
+                        document.getElementById(guessChars[x]).classList.add("found");
+                    }else{
+                        document.getElementById(guessChars[x]).classList.add("notfound");
+                    }
+                    isGuessCharInWord = false;
+                    isGuessCharInRightPosition = false;
+
                 }
                 console.log("check the guess");
             }

@@ -46,7 +46,7 @@ body{
     margin:.3em;
 }
 #keyboard .key.notfound{
-    opacity: 50%;
+    opacity: 20%;
 }
 #keyboard .key.found{
     background-color: white;
