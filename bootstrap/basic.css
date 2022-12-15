@@ -26,3 +26,28 @@ body{
 .yep{
     background-color: rgb(130, 142, 253);
 }
+
+#keyboard{
+    margin-top:5em;
+    margin-bottom:2em;
+}
+
+#keyboard .key{
+    font-size:75%;
+    display:inline-block;
+    border:1px solid #666;
+    background-color: #DDD;
+    width:2em;
+    height:2em;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    margin:.3em;
+}
+#keyboard .key.notfound{
+    opacity: 50%;
+}
+#keyboard .key.found{
+    background-color: ;
+}
