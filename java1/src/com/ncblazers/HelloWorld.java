@@ -59,8 +59,8 @@ public class HelloWorld {
 	private String name = "World";
 
 	/**
-	 * Returns the name
-	 * @return
+	 * Returns the name variable
+	 * @return name
 	 */
 	public String getName() {
 		return name;
