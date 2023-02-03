@@ -4,6 +4,7 @@ public class Employee extends Person {
 	private int id;
 	private float bonus;
 	private float basePay;
+	private float hours;
 	
 	public Employee(){
 		
@@ -50,6 +51,10 @@ public class Employee extends Person {
 	}
 	public void setBasePay(float basePay) {
 		this.basePay = basePay;
+	}
+	
+	public void addHours(float hours) {
+		this.hours = this.hours + hours;
 	}
 	
 	public float calculatePay(int hours) {
