@@ -7,7 +7,7 @@ public class Employee extends Person {
 	private float hours;
 	
 	public Employee(){
-		
+		clearHours();
 	}
 	
 	public Employee(
@@ -19,20 +19,12 @@ public class Employee extends Person {
 			float basePay) 
 	{
 		super(firstName, lastName, age);
+		clearHours();
 		this.id = id;
 		this.basePay = basePay;
 		this.bonus = bonus;
 	}
 	
-	/**
-	 * Meant to be call by passing in a line from a CSV that will be parsed into the fields. 
-	 * 
-	 * @param lineFromCSV
-	 */
-	public Employee(String lineFromCSV) {
-		
-		
-	}
 	
 	public int getId() {
 		return id;
@@ -54,10 +46,18 @@ public class Employee extends Person {
 	}
 	
 	public void addHours(float hours) {
-		this.hours = this.hours + hours;
+		if(hours > 0) {
+			this.hours = this.hours + hours;
+		} else {
+			throw new RuntimeException("Hours must be greater than zero.  check your file");
+		}		
 	}
 	
-	public float calculatePay(int hours) {
+	public void clearHours() {
+		this.hours = 0;
+	}
+	
+	public float calculatePay() {
 		float base = hours * basePay;
 		
 		return base + base * bonus;
