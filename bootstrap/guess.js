@@ -49,11 +49,19 @@ guessButton.onclick = function(){
                 }
                 console.log("check the guess");
             }
+            guessesMade++;
+            //ready for next guess
         }else{
             alert("your guess sucks");
         }
     }
-    guessesMade++;
-    //ready for next guess
 }
+
+for(const clickableKey of document.getElementsByClassName("key")){
+    clickableKey.onclick = function(){
+        var clickedLetter = this.getAttribute("id");
+        userInput.value = userInput.value + clickedLetter;
+    }
+}
+
 
